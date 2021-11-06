@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 95vh;
+    
+}
+button {
+    background-color: rgb(128, 128, 128);
+    width: auto;
+    min-height: 70px;
+    color: white;
+    font-size: inherit;
+    border-radius: 5px;
+}
+
+@font-face {
+    font-family: digital;
+    src: url(./fonts/DIGITALDREAM.ttf);
+}
+
+#calculator {
+    width: 400px;
+    padding: 10px;
+    background-color: rgb(61, 61, 61);
+    border-radius: 5px;
+    font-size: 36px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.numbers {
+    background-color: chocolate;
+}
+
+#workingArea {
+    width: auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: repeat(7 1fr);
+    grid-template-areas:
+    "display display display display"
+    "plus minus multiply divide"
+    "seven eight nine equals"
+    "four five six equals"
+    "one two three c"
+    "zero zero decimal c";
+}
+.name {
+    grid-area: name;
+    color: white;
+}
+.solar {background-color: rgb(66, 33, 9);
+    width: 100px;
+    height: 40px;
+
+}
+.display {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    grid-area: display;
+    font-family: digital;
+    font-size: 24px;
+    background-color: #cfe3e4;
+    border: 1px solid black;
+    min-height: 70px;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 6px;
+}
+.plus {
+    grid-area: plus;
+}
+.minus {
+    grid-area: minus;
+}
+.multiply {
+    grid-area: multiply;
+}
+.divide {
+    grid-area: divide;
+}
+.seven {
+    grid-area: seven;
+}
+.eight {
+    grid-area: eight;
+}
+.nine {
+    grid-area: nine;
+}
+.equals {
+    grid-area: equals;
+}
+.four {
+    grid-area: four;
+}
+.five {
+    grid-area: five;
+}
+.six {
+    grid-area: six;
+}
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+.c {
+    grid-area: c;
+}
+.zero {
+    grid-area: zero;
+}
+.decimal {
+    grid-area: decimal;
+}
